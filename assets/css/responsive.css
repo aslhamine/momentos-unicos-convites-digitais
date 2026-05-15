@@ -1,0 +1,74 @@
+/* =========================
+   responsive.css
+========================= */
+
+@media(max-width:640px){
+
+  .brand-name{
+    display:none;
+  }
+
+  .btn{
+    width:100%;
+  }
+
+  .navbar .btn-outline{
+    width:auto;
+    padding-inline:16px;
+    font-size:10px;
+  }
+
+  .hero{
+    padding-top:100px;
+  }
+
+  .section{
+    padding:72px 0;
+  }
+
+}
+
+@media(min-width:768px){
+
+  .hero-actions{
+    flex-direction:row;
+    justify-content:center;
+  }
+
+  .services-grid{
+    grid-template-columns:repeat(2, 1fr);
+  }
+
+  .stats-grid{
+    grid-template-columns:repeat(3, 1fr);
+  }
+
+  .events-grid{
+    grid-template-columns:repeat(2, 1fr);
+  }
+
+}
+
+@media(min-width:1024px){
+
+  .hero-decoration-lg{
+    display:block;
+
+    width:850px;
+    height:850px;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%, -50%);
+  }
+
+  .services-grid{
+    grid-template-columns:repeat(4, 1fr);
+  }
+
+  .events-grid{
+    grid-template-columns:repeat(5, 1fr);
+  }
+
+}
